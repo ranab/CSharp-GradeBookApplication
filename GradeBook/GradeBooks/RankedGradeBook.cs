@@ -31,8 +31,8 @@ namespace GradeBook.GradeBooks
                 return 'D';
             else if (grades[threshold * 5 - 1] <= averageGrade)
                 return 'E';
-
-            return 'F';
+            else
+                return 'F';
         }
 
         private void GetPerOfStudentsWithGradeGreaterThan(char g)
